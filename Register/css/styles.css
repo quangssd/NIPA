@@ -1,0 +1,81 @@
+/* contents */
+.contents {
+    position: relative;
+    padding:0 18px;
+}
+/* contents-header */
+.contents-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 0 38px 0;
+}
+.contents-header > .btn-wrap {
+    padding-top: 110px;
+}
+.btn.btn-back {
+    position: absolute;
+    left: -16px;
+    top: 0;
+    width: 39px;
+    height: 39px;
+}
+
+.btn.btn-back::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("../images/btn-back.svg") no-repeat center center;
+    background-size: 30px 40px;
+}
+.contents-header .tit {
+    padding-top: 13px;
+}
+/* contents-body */
+.contents-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding-bottom: 90px;
+}
+.inp-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.inp-wrap > label {
+    font-size: 14px;
+    color: #565656;
+}
+.inp-wrap > input {
+    width: 100%;
+    height: 62px;
+    padding: 14px;
+    border: 1px solid #D0D0D0;
+    border-radius: 10px;
+}
+.inp-wrap > input::placeholder {
+    color: #C0C0C0;
+}
+/* contents-footer */
+.btn {
+    border-radius: 10px;
+}
+.btn.big-full {
+    width: 100%;
+    height: 44px;
+}
+.btn.green {
+    background-color: #048982;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+.contents-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
