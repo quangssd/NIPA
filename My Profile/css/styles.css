@@ -1,0 +1,207 @@
+
+/* header */
+.header {
+    padding: 13px 18px 31px;
+}
+/* contents-header */
+.contents {
+    height: 100%;
+    padding:0 18px 70px;
+    background-color: #fff;
+}
+
+/* contents-body */
+.info-box {
+    position: relative;
+    height: 110px;
+    margin-top: 90px;
+    border: 1px solid #D0D0D0;
+    border-radius: 10px;
+}
+.info-box > .img-wrap {
+    position: relative;
+    top: -45px;
+    left: 20px;
+    z-index: 10;
+}
+.info-box > .info-row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 0;
+    top: -26px;
+    padding: 0 18px;
+}
+.info-box > .info-row > .tit {
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.info-box > .info-row .txt-tyA {
+    position: absolute;
+    top: 7px;
+    right: -30px;
+    color: #D7D7D7;
+}
+/* row-group */
+.row-group {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+.row-wrap {
+    display: flex;
+    padding: 17px 0;
+}
+.row-wrap > .col-cont-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 12px;
+}
+.row-wrap > .col-cont-area > .cont-area {
+    display: flex;
+    justify-content: space-between;
+}
+.row-wrap > .col-cont-area > .cont-area > .tit {
+    font-weight: 500;
+    font-size: 14px;
+    color: #262626;
+}
+.row-wrap > .col-cont-area > .cont-area > .cont {
+    font-weight: 400;
+    font-size: 13px;
+    color: #262626;
+}
+.row-wrap > .col-cont-area > .cont-area .txt {
+    font-weight: 400;
+    font-size: 12px;
+    color: #999999;
+}
+.row-wrap > .col-cont-area > .cont-area .btn-wrap {
+    display: flex;
+    column-gap: 16px;
+}
+.btn-more {
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+.btn-more::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/Dots.svg') no-repeat center center;
+    background-size: 15px 15px;
+}   
+/* btn */
+.btn {
+    border-radius: 10px;
+    /* font-family: 'Inter'; */
+}
+.btn.big-full {
+    width: 100%;
+    height: 44px;
+}
+.btn.green {
+    background-color: #048982;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+.btn-post {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: -30px;
+}
+.btn-post::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: url("../images/Post.svg") no-repeat center center;
+    background-size: 30px 30px;
+}
+/* contents-footer */
+.contents-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 58px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-top: 1px solid #048982;
+}
+.contents-footer > a {
+    width: 20%;
+    height: 100%;
+}
+.ico {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.ico::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.ico.ico-home::after {
+    background: url('../images/Home.svg') no-repeat center center;
+    background-size: 30px 30px;
+}
+.ico.ico-post::after {
+    background: url('../images/Post.svg') no-repeat center center;
+    background-size: 30px 30px;
+}
+.ico.ico-chat::after {
+    background: url('../images/chat-dots.svg') no-repeat center center;
+    background-size: 25px 25px;
+}
+.ico.ico-profile::after {
+    background: url('../images/Profile_on.svg') no-repeat center center;
+    background-size: 30px 30px;
+}
+
+/* modal */
+.modal {
+    display: none;
+    flex-direction: column;
+    row-gap: 32px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 12;
+}
+.modal img {
+    padding: 0 20px;
+}
+.btn.btn-green {
+    height: 36px;
+    padding: 0 50px;
+    background-color: #048982;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+
+}
+  
+  
