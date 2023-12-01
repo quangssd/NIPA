@@ -13,10 +13,15 @@
 /* contents-body */
 .info-box {
     position: relative;
-    height: 110px;
-    margin-top: 90px;
-    border: 1px solid #D0D0D0;
+    /* height: 110px; */
+    /* margin-top: 90px; */
+    /* border: 1px solid #D0D0D0; */
     border-radius: 10px;
+}
+.info-box > h1 {
+    color:#262626;
+    font-size: 32px;
+    font-weight: 700;
 }
 .info-box > .img-wrap {
     position: relative;
@@ -85,8 +90,9 @@
 }
 .btn-more {
     position: relative;
-    width: 15px;
-    height: 15px;
+    width: 5px;
+    height: 5px;
+    top: 5px;
 }
 .btn-more::after {
     content: '';
@@ -95,19 +101,22 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/Dots.svg') no-repeat center center;
-    background-size: 15px 15px;
+    border-radius: 50%;
+    background: green no-repeat center center;
+    background-size: 5px 5px;
 }   
 /* img */
 .col-img {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
     overflow: hidden;
 }
 .col-img img {
     width: 100%; /* Hình ảnh sẽ thu nhỏ hoặc phóng to để phù hợp với chiều rộng của div */
-    height: auto; /* Để giữ tỷ lệ chiều cao tự động */
+    height: 100%; /* Để giữ tỷ lệ chiều cao tự động */
     display: block;
+    object-fit: fill;
 }
 /* btn */
 .btn {

@@ -47,7 +47,7 @@
                     </div>
                </div>
                <div class="contents-footer">
-                    <a href="#this" class="ico ico-home"></a>
+                    <a href="../Main/feed.html" class="ico ico-home"></a>
                     <a href="../New Feed/new_post.html" class="ico ico-post"></a>
                     <a href="../Chat/chat.html" class="ico ico-chat"></a>
                     <a href="../My Profile/myPage.html" class="ico ico-profile"></a>
@@ -56,45 +56,6 @@
         </div>
     </div>
 
-    <script src="../auth.js" defer></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    const currentUser = getCurrentUser();
-    if (!currentUser) {
-        window.location.href = 'login.html';
-    }
-
-
-    const profileImage = currentUser.profileImage;
-    const nickname = currentUser.nickname;
-
- 
-    const profileImageElement = document.getElementById('profile-image');
-    const nicknameElement = document.getElementById('nickname');
-
-    if (profileImageElement) {
-        profileImageElement.src = profileImage || 'default_profile_image.jpg';
-    }
-
-    if (nicknameElement) {
-        nicknameElement.textContent = nickname || 'Guest';
-    }
-
-   
-    function uploadPost() {
-        const postContentElement = document.getElementById('post-content');
-        if (!postContentElement) {
-            console.error('post-content element not found');
-            return;
-        }
-
-        const postContent = postContentElement.value;
-   
-        console.log('Uploaded post content:', postContent);
-
-        window.location.href = 'feed.html';
-    }
-});
-    </script>
+    
 </body>
 </html>

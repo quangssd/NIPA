@@ -20,13 +20,18 @@ body {
   max-width: 500px;
   background-color: #fff;
 }
-
+.content-header > h1 {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 0 25px;
+  color: #262626;
+}
 .logo {
-  width: 94.84px;
-  height: 30px;
-  margin-top: -120px; 
-  margin-left: 18px;
-  margin-bottom: 13px;
+    width: 94.84px;
+    height: 30px;
+    margin-top: -62px;
+    margin-left: 26px;
+    margin-bottom: 23px
 }
 
 #post-container {
@@ -129,7 +134,7 @@ body {
     .logo {
         width: 94.84px;
         height: 30px;
-        margin-top: 13px;
+        margin-top: -70px;
         margin-left: 26px;
     }
 
@@ -177,4 +182,51 @@ body {
     margin-left: 36px;
     margin-right: 36px; 
   }
+}
+.contents-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 58px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-top: 1px solid #048982;
+}
+.contents-footer > a {
+    width: 20%;
+    height: 100%;
+}
+.ico {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.ico::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.ico.ico-home::after {
+    background: url('image/images/Home-on.svg') no-repeat center center;
+    background-size: 30px 30px;
+}
+.ico.ico-post::after {
+    background: url('image/images/Post.svg') no-repeat center center;
+    background-size: 30px 30px;
+}
+.ico.ico-chat::after {
+    background: url('image/images/chat-dots.svg') no-repeat center center;
+    background-size: 25px 25px;
+    filter: grayscale(50%) brightness(120%);
+}
+.ico.ico-profile::after {
+    background: url('image/images/Profile.svg') no-repeat center center;
+    background-size: 30px 30px;
 }
