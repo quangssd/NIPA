@@ -5,7 +5,8 @@
 }
 /* contents-header */
 .contents {
-    padding:0 18px;
+    padding:0 18px 90px;
+    background-color: #fff;
 }
 
 /* contents-body */
@@ -16,6 +17,10 @@ textarea {
     padding: 25px 19px;
     border: 1px solid #D0D0D0;
     border-radius: 10px;
+    font-family: 'Inria Serif';
+}
+textarea::placeholder {
+    color: #E2E2E2;
     font-family: 'Inria Serif';
 }
 .txt-wrap {
@@ -61,7 +66,7 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 75px;
+    /* column-gap: 75px; */
     position: fixed;
     width: 100%;
     left: 0;
@@ -70,6 +75,13 @@ textarea {
     height: 58px;
     max-width: 500px;
     margin: 0 auto;
+    border-top: 1px solid #048982;
+    background-color: #fff;
+    z-index: 20;
+}
+.contents-footer > a {
+    width: 20%;
+    height: 100%;
 }
 .ico {
     position: relative;
@@ -90,10 +102,10 @@ textarea {
     background: url('../images/Post.svg') no-repeat center center;
     background-size: 30px 30px;
 }
-/* .ico.ico-chat::after {
-    background: url('../images/Chat.svg') no-repeat center center;
-    background-size: 30px 30px;
-} */
+.ico.ico-chat::after {
+    background: url('../images/chat-dots.svg') no-repeat center center;
+    background-size: 25px 25px;
+}
 .ico.ico-profile::after {
     background: url('../images/Profile.svg') no-repeat center center;
     background-size: 30px 30px;
